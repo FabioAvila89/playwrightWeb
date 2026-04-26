@@ -8,7 +8,7 @@ test.beforeEach(async ({ page }) => {
   await login.assertWelcome('fabioavilamacedo@');
 });
 
-test.only('compra notbook', async ({ page }) => {
+test('compra notbook', async ({ page }) => {
   
     
 await page.getByRole('link', { name: 'Laptops' }).click();
